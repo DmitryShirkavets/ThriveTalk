@@ -13,7 +13,7 @@ a{
 
 @font-face {
     font-family: "Larsseit";
-    src: url("../fonts/Larsseit.ttf") format("truetype");
+    src: url("./../fonts/Larsseit.ttf") format("truetype");
 }
 
 body{
@@ -29,7 +29,7 @@ body{
 .header::after{
     content: "";
     display: block;
-    background-image:url(../img/Mask\ Group.svg);
+    background-image:url(../images/Mask\ Group.svg);
     background-size: 1126px 750px;
     width: 1126px;
     height:  750px;
@@ -41,7 +41,7 @@ body{
 .container{
     margin: 0 auto;
     max-width: 1080px;
-    display: grid | inline-grid | subgrid;
+    // display: grid | inline-grid | subgrid;
 }
 
 .header__container {
