@@ -1,0 +1,24 @@
+.about{
+    .container{
+        width: 1228px;
+    }
+
+    &__wrapper{
+        box-sizing: border-box;
+        padding-top: 150px;
+        display: grid;
+        column-gap: 225px;
+        grid-template-columns: 93px 592px
+    }
+
+    &__title{
+        margin-top: 6px;
+        @include text(16px, 22px, $textColor);
+        text-transform: uppercase;
+    }
+
+    &__text{
+        @include text(24px, 33px, $textColor);
+        width: 592px;
+    }
+}

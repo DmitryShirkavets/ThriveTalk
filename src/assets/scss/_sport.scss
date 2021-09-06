@@ -1,0 +1,63 @@
+.sport{
+    margin-bottom: 120px;
+
+    &__title{
+        @include text(16px, 18px, $textColor);
+        opacity: 0.5;
+        margin-top: 76px;
+        margin-bottom: 24px;
+        text-align: center;
+    }
+
+    &__list{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+        height: 360px;
+
+        &-item{
+            padding: 100px 52.5px;
+            position: relative;
+            width: 100%;
+            box-sizing: border-box;
+
+            &:first-child{
+                background-color: $backColorOne;
+            }
+
+            &:nth-child(2){
+                background-color: $backColorTwo;
+            }
+
+            &:nth-child(3){
+                background-color: $primaryColor;
+            }
+
+            &:last-child{
+                background-color: $backColorThree;
+            }
+
+            &::before{
+                content: '';
+                display: block;
+                width: 9px;
+                height: 9px;
+                background-color: $listColor;
+                border-radius: 50%;
+                position: absolute;
+                left: 54px;
+                top: 137px;
+            }
+        }
+
+        &-link{
+            border-top: 1px solid $textColorLight;
+            padding-top: 23px;
+            padding-left: 26px;
+            @include text(32px, 33px, $textColorLight);
+            box-sizing: border-box;
+            display: block;
+            height: 100%;
+        }
+    }
+}

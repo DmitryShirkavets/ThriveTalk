@@ -8,23 +8,15 @@ $listColor: #E9B730;
 $textColor: #22356F;
 $textColorLight: #fff;
 $linkColor: #5286EC;
-$backColor: #FAF9F8;
+$backColorOne: #FFE2DE;
+$backColorTwo: #C4E769;
+$backColorThree: #0052C1;
+$backColorFour: #0052C1;
+$backColorFive: #DEE1FF;
+$backColorSixth:#8F00FF;
 
 // container
 %container{
-    padding: 0 15px;
-
-    @media screen and (min-width: 576px) {
-        padding: 0 35px;
-    }
-
-    @media screen and (min-width: 768px) {
-        padding: 0 50px;
-    }
-
-    @media screen and (min-width: 1280px) {
-        padding: 0;
-        width: 1140px;
-        margin: 0 auto;
-    }
+    width: 1080px;
+    margin: 0 auto;
 }

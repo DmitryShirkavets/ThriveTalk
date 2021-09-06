@@ -24,6 +24,7 @@ body{
 
 @import './abstracts/vars';
 @import './abstracts/mixins';
+@import 'container';
 
 // HEADER
 @import 'header';
@@ -33,11 +34,19 @@ body{
 // THRIVE
 @import 'thrive';
 
-.container{
-    margin: 0 auto;
-    max-width: 1080px;
-    display: grid | inline-grid | subgrid;
-}
+// ABOUT
+@import 'about';
+// ABOUT SPORT
+@import 'sport';
+
+// LIFESTYLE
+@import 'lifestyle';
+
+// .container{
+//     margin: 0 auto;
+//     max-width: 1080px;
+//     display: grid | inline-grid | subgrid;
+// }
 
 .logo__link{
     font-size: 24px;

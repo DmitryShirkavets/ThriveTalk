@@ -10,6 +10,8 @@
     }
 
     &__title{
+        text-transform: capitalize;
+        height: 51px;
         @include text(36px, 27px, $textColorLight);
         margin-bottom: 75px;
     }
@@ -17,6 +19,7 @@
     &__text{
         @include text(20px, 29px, $textColorLight);
         max-width: 555px;
+        height: 235px;
         
         span{
             @include text(24px, 35px, $textColorLight);
