@@ -1,0 +1,37 @@
+.thrive{
+    background-color: $primaryColor;
+    position: relative;
+
+    &__wrapper{
+        padding-top: 151px;
+        padding-bottom: 92px;
+        box-sizing: border-box;
+        height: 604px;
+    }
+
+    &__title{
+        @include text(36px, 27px, $textColorLight);
+        margin-bottom: 75px;
+    }
+
+    &__text{
+        @include text(20px, 29px, $textColorLight);
+        max-width: 555px;
+        
+        span{
+            @include text(24px, 35px, $textColorLight);
+        }
+    }
+
+    &::after{
+        content: "";
+        display: block;
+        background-image: url(./../images/thrive.svg);
+        background-size: 525px 604px;
+        width: 525px;
+        height:  604px;
+        position: absolute;
+        top: 0%;
+        right: 0%;
+    }
+}

@@ -1,0 +1,86 @@
+
+
+.header{
+    background-color: #F4F9E2;
+    position: relative;
+    overflow-x: hidden;
+
+    &::after{
+        content: "";
+        display: block;
+        background-image: url(./../images/mask_group.svg);
+        background-size: 1126px 750px;
+        width: 1126px;
+        height:  750px;
+        position: absolute;
+        top: 0%;
+        right: -16%;
+    }
+    
+    
+    
+    .header__container {
+        height: 100vh;
+        padding-top: 27px;
+        box-sizing: border-box;
+    }
+    
+    &__top{
+        display: grid;
+        grid-template-columns: 105px 239px 150px;
+        column-gap: 270px;
+        align-items: center;
+    }
+
+    &__content{
+        margin-top: 164px;
+        max-width: 484px;
+    }
+    
+    &__content-logo{
+        margin-bottom: 40px;
+    }
+    
+    &__content-title{
+        font-size: 48px;
+        line-height: 53px;
+        letter-spacing: -0.035em;
+        color: #22356F;
+        margin-bottom: 40px;
+    }
+    
+    &__content-text{
+        font-size: 24px;
+        line-height: 42px;
+        color: #22356F;
+        margin-bottom: 40px;
+    }
+    
+   &__buttons-one{
+        padding: 10px 30px;
+        background-color: #F9B640;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+        font-size: 16px;
+        line-height: 23px;
+        align-items: center;
+        letter-spacing: 0.1em;
+        margin-right: 40px;
+    }
+    
+    &__buttons-two{
+        padding: 10px 0;
+        background-color: inherit;
+        border: none;
+        color: #F9B640;
+        cursor: pointer;
+        font-size: 16px;
+        line-height: 23px;
+        letter-spacing: 0.1em;
+    }
+    
+    &__content &__content-button:first-child{
+        margin-right: 10px;
+    }
+}

@@ -1,3 +1,5 @@
+@import 'normalize';
+
 ul, h1, h2, h3, h4, h5, h6, p{
     padding: 0;
     margin: 0;
@@ -20,40 +22,21 @@ body{
     font-family: 'Larsseit';
 }
 
-.header{
-    background-color: #F4F9E2;
-    position: relative;
-    overflow-x: hidden;
-}
+@import './abstracts/vars';
+@import './abstracts/mixins';
 
-.header::after{
-    content: "";
-    display: block;
-    background-image:url(../images/Mask\ Group.svg);
-    background-size: 1126px 750px;
-    width: 1126px;
-    height:  750px;
-    position: absolute;
-    top: 0%;
-    right: -16%;
-}
+// HEADER
+@import 'header';
+// HEADER MENU
+@import 'menu';
+
+// THRIVE
+@import 'thrive';
 
 .container{
     margin: 0 auto;
     max-width: 1080px;
-    // display: grid | inline-grid | subgrid;
-}
-
-.header__container {
-    height: 100vh;
-    padding-top: 27px;
-    box-sizing: border-box;
-}
-
-.header__top{
-    display: grid;
-    grid-template-columns: 105px 1fr 239px 1fr 150px;
-    align-items: center;
+    display: grid | inline-grid | subgrid;
 }
 
 .logo__link{
@@ -63,18 +46,7 @@ body{
     color: #62D0DF;
 }
 
-.menu__list{
-    font-size: 14px;
-    line-height: 16px;
-    color: #22356F;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-items: center;
-}
 
-.menu__list-item:hover .menu__list-link{
-    box-shadow: inset 0px -1px 0px #22356F;
-}
 
 .contact__button{
     background: #62D0DF;
@@ -96,54 +68,3 @@ body{
     cursor: pointer;
 }
 
-.header__content{
-    margin-top: 164px;
-    max-width: 484px;
-}
-
-.header__content-logo{
-    margin-bottom: 40px;
-}
-
-.header__content-title{
-    font-size: 48px;
-    line-height: 53px;
-    letter-spacing: -0.035em;
-    color: #22356F;
-    margin-bottom: 40px;
-}
-
-.header__content-text{
-    font-size: 24px;
-    line-height: 42px;
-    color: #22356F;
-    margin-bottom: 40px;
-}
-
-.header__buttons-one{
-    padding: 10px 30px;
-    background-color: #F9B640;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-    font-size: 16px;
-    line-height: 23px;
-    align-items: center;
-    letter-spacing: 0.1em;
-    margin-right: 40px;
-}
-
-.header__buttons-two{
-    padding: 10px 0;
-    background-color: inherit;
-    border: none;
-    color: #F9B640;
-    cursor: pointer;
-    font-size: 16px;
-    line-height: 23px;
-    letter-spacing: 0.1em;
-}
-
-.header__content .header__content-button:first-child{
-    margin-right: 10px;
-}
