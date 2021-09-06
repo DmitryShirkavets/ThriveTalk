@@ -1,0 +1,50 @@
+.know{
+    position: relative;
+    background-color: $textColorLight;
+
+    .container{
+        width: 1090px;
+    }
+
+    &__wrapper {
+        text-align: start;
+        height: 800px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 103px;
+    }
+
+    &__title{
+        @include text(16px, 12px, $textColor);
+        margin-bottom: 225px;
+    }
+
+    &__text{
+        @include text(36px, 52px, $textColor);
+        align-self: flex-end;
+        width: 676px;
+
+        span{
+            @include text(36px, 52px, $primaryColor);
+        }
+    }
+
+    &__subtitle{
+        @include text(16px, 23px, $accentColor);
+        margin-top: 152px;
+    }
+
+    &::before{
+        content: "";
+        display: block;
+        background-image: url(./../images/linkedin-sales-navigator.png);
+        background-size: 480px 800px;
+        width: 480px;
+        height:  800px;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+    }
+}
