@@ -1,0 +1,27 @@
+.workout{
+    .container{
+        width: 1230px;
+    }
+
+    &__list{
+        margin-top: 22px;
+        margin-bottom: 40px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        &-item{
+            box-sizing: border-box;
+            padding: 55px 77px 37px 105px;
+        }
+    }
+
+    &__title{
+        @include text(28px, 32px, $textColor);
+        margin-bottom: 28px;
+    }
+
+    &__text{
+        @include text(16px, 25px, $textColor);
+        opacity: 0.5;
+    }
+}
