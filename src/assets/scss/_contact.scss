@@ -1,0 +1,44 @@
+.contact{
+    background-color: $textColor;
+    position: relative;
+
+    &__wrapper{
+        height: 800px;
+        box-sizing: border-box;
+        padding-top: 103px;
+        padding-bottom: 42px;
+    }
+
+    &__subtitle{
+        @include text(16px, 12px, $textColorLight);
+        text-transform: uppercase;
+        margin-bottom: 230px;
+    }
+
+    &__title{
+        @include text(64px, 93px, $textColorLight);
+        margin-bottom: 75px;
+    }
+
+    &__text{
+        @include text(36px, 52px, $textColorLight);
+        width: 579px;
+        margin-bottom: 55px;
+    }
+
+    &__link{
+        @include text(16px, 23px, $primaryColor);
+    }
+
+    &::after{
+        content: "";
+        display: block;
+        background-image: url(./../images/charles-etoroma-390119.png);
+        background-size: 480px 800px;
+        width: 480px;
+        height:  800px;
+        position: absolute;
+        top: 0%;
+        right: 0%;
+    }    
+}
