@@ -9,7 +9,7 @@
 </head>
 <body>
     <header class="header">
-        <div class="header__container container">
+        <div class="container">
             <div class="header__top">
                 <div class="header__logo logo">
                     <a class="logo__link" href="#" >Thrivetalk</a>
@@ -22,8 +22,8 @@
                         <li class="menu__list-item"><a class="menu__list-link" href="#">Blog</a></li>
                     </ul>
                 </nav>
-                <div class="header__contact contact">
-                    <button class="contact__button btn">Contact us</button>
+                <div class="header__contact">
+                    <button class="header__contact-button">Contact us</button>
                 </div>
             </div>
             <div class="header__content">
@@ -179,29 +179,35 @@
 
     <footer class="footer">
         <div class="footer__top">
-            <div class="footer__info">
-                <h4 class="footer__info-title">SOME INFO</h4>
-                <p class="footer__info-title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula.</p>
-            </div>
-            <div class="footer__address">
-                <h4 class="footer__address-title">ENFOLD HEALTH</h4>
-                <p class="footer__address-text">
-                    Main Street 1, Olcott
-                    Buffalo, United States
-                    
-                    +555 283 784 333
-                    office@enfold-health.com</p>
-            </div>
-            <div class="footer__schedule">
-                <h4 class="footer__schedule-title">OFFICE HOURS</h4>
-                <p class="footer__schedule-text">
-                    Mo-Fr: 8:00-19:00
-                    Sa: 8:00-14:00
-                    Su: closed</p>
+            <div class="container">
+                <div class="footer__top-wrapper">
+                    <div class="footer__info">
+                        <h4 class="footer__info-title">SOME INFO</h4>
+                        <p class="footer__info-text">Lorem ipsum dolor sit amet,<br> consectetuer adipiscing elit.<br> Aenean commodo ligula.</p>
+                    </div>
+                    <div class="footer__info">
+                        <h4 class="footer__info-title">ENFOLD HEALTH</h4>
+                        <p class="footer__info-text">
+                            Main Street 1, Olcott<br>
+                            Buffalo, United States<br>
+                            <br>
+                            +555 283 784 333<br>
+                            <a class="footer__info-link" href="mailto:office@enfold-health.com">office@enfold-health.com</a></p>
+                    </div>
+                    <div class="footer__info">
+                        <h4 class="footer__info-title">OFFICE HOURS</h4>
+                        <p class="footer__info-text">
+                            Mo-Fr: 8:00-19:00<br>
+                            Sa: 8:00-14:00<br>
+                            Su: closed</p>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="footer__bottom">
-            <p class="footer__bottom-text"> Copyright - ThriveTalk  2017</p>
+            <div class="container">
+                <p class="footer__bottom-text"><span>©</span>Copyright - ThriveTalk  2017</p>
+            </div>
         </div>
     </footer>
 </body>

@@ -51,6 +51,9 @@ body{
 // CONTACT
 @import 'contact';
 
+// FOOTER
+@import 'footer';
+
 // .container{
 //     margin: 0 auto;
 //     max-width: 1080px;
@@ -66,23 +69,5 @@ body{
 
 
 
-.contact__button{
-    background: #62D0DF;
-    border: none;
-    border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
-    font-size: 14px;
-    line-height: 16px;
-    display: flex;
-    align-items: center;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    max-width: 150px;
-    max-height: 50px;
-    padding: 20px 30px;
-    cursor: pointer;
-}
+
 

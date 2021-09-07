@@ -9,18 +9,16 @@
         content: "";
         display: block;
         background-image: url(./../images/mask_group.svg);
-        background-size: 1126px 750px;
-        width: 1126px;
-        height:  750px;
+        background-size: 743px 824px;
+        width: 743px;
+        height:  824px;
         position: absolute;
         top: 0%;
-        right: -16%;
+        right: 0%;
     }
     
-    
-    
-    .header__container {
-        height: 100vh;
+    .container {
+        height: 840px;
         padding-top: 27px;
         box-sizing: border-box;
     }
@@ -32,53 +30,66 @@
         align-items: center;
     }
 
+    &__contact{
+        &-button{
+            background: #62D0DF;
+            border: none;
+            border-radius: 50px;
+            -webkit-border-radius: 50px;
+            -moz-border-radius: 50px;
+            -ms-border-radius: 50px;
+            -o-border-radius: 50px;
+            @include text(14px, 16px, $textColorLight);
+            display: flex;
+            align-items: center;
+            text-transform: uppercase;
+            max-width: 150px;
+            max-height: 50px;
+            padding: 20px 30px;
+            cursor: pointer;
+        }
+    }
+
     &__content{
         margin-top: 164px;
         max-width: 484px;
+
+        &-logo{
+            margin-bottom: 40px;
+        }
+
+        &-title{
+            @include text(48px, 53px, $textColor);
+            margin-bottom: 40px;
+        }
+
+        &-text{
+            @include text(24px, 42px, $textColor);
+            margin-bottom: 40px;
+        }
     }
+
     
-    &__content-logo{
-        margin-bottom: 40px;
-    }
-    
-    &__content-title{
-        font-size: 48px;
-        line-height: 53px;
-        letter-spacing: -0.035em;
-        color: #22356F;
-        margin-bottom: 40px;
-    }
-    
-    &__content-text{
-        font-size: 24px;
-        line-height: 42px;
-        color: #22356F;
-        margin-bottom: 40px;
-    }
-    
-   &__buttons-one{
-        padding: 10px 30px;
-        background-color: #F9B640;
-        border: none;
-        color: #fff;
-        cursor: pointer;
-        font-size: 16px;
-        line-height: 23px;
-        align-items: center;
-        letter-spacing: 0.1em;
-        margin-right: 40px;
-    }
-    
-    &__buttons-two{
-        padding: 10px 0;
-        background-color: inherit;
-        border: none;
-        color: #F9B640;
-        cursor: pointer;
-        font-size: 16px;
-        line-height: 23px;
-        letter-spacing: 0.1em;
-    }
+   &__buttons{
+        &-one{
+            padding: 10px 30px;
+            background-color: #F9B640;
+            border: none;
+            @include text(16px, 23px, $textColorLight);
+            cursor: pointer;
+            align-items: center;
+            margin-right: 40px;
+        }
+
+        &-two{
+            padding: 10px 0;
+            background-color: inherit;
+            border: none;
+            @include text(16px, 23px, $secondaryColor);
+            cursor: pointer;
+            letter-spacing: 0.1em;
+        }
+   }
     
     &__content &__content-button:first-child{
         margin-right: 10px;
