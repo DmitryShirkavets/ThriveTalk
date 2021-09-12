@@ -1,0 +1,12 @@
+@keyframes sport {
+    33%{
+        border-right: 1px solid $textColorLight;
+    }
+    66%{
+        border-bottom: 1px solid $textColorLight;
+    }
+    100% {
+        border-left: 1px solid $textColorLight;
+        animation-play-state: paused;
+    }
+}

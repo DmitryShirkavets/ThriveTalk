@@ -58,6 +58,11 @@
             box-sizing: border-box;
             display: block;
             height: 100%;
+
+            &:hover{
+                animation: sport 3s;
+                animation-iteration-count: 3;
+            }
         }
     }
 }

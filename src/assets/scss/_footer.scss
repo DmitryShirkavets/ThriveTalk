@@ -6,14 +6,12 @@
         box-sizing: border-box;
         position: relative;
 
-        .container{
-            width: 1360px;
-        }
-
         &-wrapper{
-            display: flex;
-            justify-content: flex-end;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
             gap: 48px;
+            box-sizing: border-box;
+            padding-left: 45%;
         }
 
         &::before{
@@ -40,7 +38,7 @@
         &-text{
             @include text(14px, 23px, $textColor);
             opacity: 0.5;
-            width: 240px;
+            // width: 240px;
         }
 
         &-link{
