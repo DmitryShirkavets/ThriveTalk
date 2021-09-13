@@ -10,10 +10,10 @@
         text-align: start;
         height: 800px;
         box-sizing: border-box;
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        justify-content: end;
         align-items: center;
-        padding-top: 103px;
+        padding: 103px 0 42px ;
     }
 
     &__title{
